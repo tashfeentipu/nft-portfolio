@@ -3,7 +3,7 @@ import Image from 'next/image'
 export function TrendingCollection({ pathPrimary, pathSecondary1, pathSecondary2 }:
     { pathPrimary: string, pathSecondary1: string, pathSecondary2: string }) {
     return (
-        <div className='w-330' >
+        <div className='w-[330px]' >
             <div className='mb-5' >
                 <Image
                     src={`/assets/trendingCollections/${pathPrimary}.png`}
