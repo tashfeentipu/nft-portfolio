@@ -3,7 +3,7 @@ import Image from 'next/image'
 export function TrendingCollection({ pathPrimary, pathSecondary1, pathSecondary2 }:
     { pathPrimary: string, pathSecondary1: string, pathSecondary2: string }) {
     return (
-        <div className='w-[330px]' >
+        <div>
             <div className='mb-5' >
                 <Image
                     src={`/assets/trendingCollections/${pathPrimary}.png`}
@@ -25,7 +25,7 @@ export function TrendingCollection({ pathPrimary, pathSecondary1, pathSecondary2
                     width={100}
                     height={100}
                 />
-                <div className='w-100 bg-pink-500 flex justify-center items-center rounded-custom' >
+                <div className='w-100 bg-call-to-action text-text flex justify-center items-center rounded-custom' >
                     1025+
                 </div>
             </div>

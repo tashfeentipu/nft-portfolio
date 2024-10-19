@@ -8,21 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
       height: {
         '100': '100px',
         '150': '150px',
       },
       width: {
         '100': '100px',
-        '330': '330px',
+      },
+      margin: {
+        "10%": "10%"
       },
       borderRadius: {
         'custom': '20px',
       },
+      colors: {
+        text: 'var(--text)',
+        'call-to-action': 'var(--call-to-action)',
+      }
     },
   },
   plugins: [],
