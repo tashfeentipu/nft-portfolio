@@ -44,5 +44,5 @@ body {
 }
 
 .button {
-  @apply border-2 border-call-to-action w-[247px] h-[60px] rounded-xl text-text flex justify-center items-center
+  @apply border-2 border-call-to-action px-10 h-[60px] rounded-xl text-text flex justify-center items-center
 }

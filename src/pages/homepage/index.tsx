@@ -1,9 +1,10 @@
 import { TopCreators } from "@/components/homepage/topCreators";
 import { TrendingCollection } from "@/components/homepage/trendingCollections";
-import { BrowseCategoriesData, TopCreatorsData } from "./data";
+import { BrowseCategoriesData, DiscoverMoreNFTsData, TopCreatorsData } from "./data";
 import Image from 'next/image'
 import { Button } from "@/components/shared/button";
 import { BrowseCategory } from "@/components/homepage/browseCategory";
+import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
 
 export default function HomePage() {
   return (
@@ -59,6 +60,26 @@ export default function HomePage() {
               icon={element.icon}
               title={element.title}
               background={element.background}
+            />
+          })}
+        </div>
+      </div>
+      <div>
+        <div className="flex justify-between items-center" >
+          <div className="my-5" >
+            <div className="text-text text-3xl font-bold my-5" >Discover More NFTs</div>
+            <div className="text-text" >Explore new trending NFTs</div>
+          </div>
+          <Button imagePath="/assets/icons/Eye.svg" title="See All" />
+        </div>
+        <div className="flex justify-between" >
+          {DiscoverMoreNFTsData.map((element: any, index: any) => {
+            return <DiscoverNFTs
+              key={index}
+              title={element.title}
+              avatar={element.avatar}
+              background={element.background}
+              avatarTitle={element.avatarTitle}
             />
           })}
         </div>
