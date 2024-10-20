@@ -1,15 +1,15 @@
-import { TopCreators } from "@/components/homepage/topCreators";
-import { TrendingCollection } from "@/components/homepage/trendingCollections";
-import { BrowseCategoriesData, DiscoverMoreNFTsData, TopCreatorsData } from "./data";
-import Image from 'next/image'
-import { Button } from "@/components/shared/button";
 import { BrowseCategory } from "@/components/homepage/browseCategory";
 import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
+import { HowItWorks } from "@/components/homepage/howItWorks";
+import { TopCreators } from "@/components/homepage/topCreators";
+import { TrendingCollection } from "@/components/homepage/trendingCollections";
+import { Button } from "@/components/shared/button";
+import { BrowseCategoriesData, DiscoverMoreNFTsData, HowItWorksData, TopCreatorsData } from "./data";
 
 export default function HomePage() {
   return (
     <div>
-      <div>
+      <div className="mx-[15%]">
         <div className="my-5" >
           <div className="text-text text-3xl font-bold my-5" >Trending Collection</div>
           <div className="text-text" >Checkout our weekly updated trending collection</div>
@@ -32,7 +32,7 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div>
+      <div className="mx-[15%]">
         <div className="flex justify-between items-center" >
           <div className="my-5" >
             <div className="text-text text-3xl font-bold my-5" >Top Creators</div>
@@ -51,7 +51,7 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div>
+      <div className="mx-[15%]">
         <div className="text-text text-3xl font-bold my-5" >Browse Categories</div>
         <div className="grid grid-cols-4 gap-x-10 gap-y-10">
           {BrowseCategoriesData.map((element: any, index: any) => {
@@ -64,10 +64,10 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div>
+      <div className="mx-[15%]">
         <div className="flex justify-between items-center" >
           <div className="my-5" >
-            <div className="text-text text-3xl font-bold my-5" >Discover More NFTs</div>
+            <div className="text-text text-3xl font-bold my-5">Discover More NFTs</div>
             <div className="text-text" >Explore new trending NFTs</div>
           </div>
           <Button imagePath="/assets/icons/Eye.svg" title="See All" />
@@ -81,6 +81,28 @@ export default function HomePage() {
               background={element.background}
               avatarTitle={element.avatarTitle}
             />
+          })}
+        </div>
+      </div>
+      <div className="relative w-full h-screen bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: "url('/assets/Highlight.png')" }}>
+
+      </div>
+      <div className="mx-[15%]">
+        <div className="flex justify-between items-center" >
+          <div className="my-5" >
+            <div className="text-text text-3xl font-bold my-5">How it works</div>
+            <div className="text-text" >Find out how to get started</div>
+          </div>
+          <Button imagePath="/assets/icons/Eye.svg" title="See All" />
+        </div>
+        <div className="flex justify-between" >
+          {HowItWorksData.map((element: any, index: any) => {
+            return <HowItWorks
+              key={index}
+              icon={element.icon}
+              title={element.title}
+              description={element.description} />
           })}
         </div>
       </div>

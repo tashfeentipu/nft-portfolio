@@ -29,3 +29,9 @@ export const DiscoverMoreNFTsData = [
     { title: "Life On Edena", background: 'ImagePlaceholder2', avatar: "Avatar2", avatarTitle: "NebulaKid" },
     { title: "AstroFiction", background: 'ImagePlaceholder3', avatar: "Avatar3", avatarTitle: "SpaceOne" },
 ]
+
+export const HowItWorksData = [
+    { title: "Setup Your Wallet", icon: "Icon1", description: "Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner." },
+    { title: "Create Collection", icon: "Icon2", description: "Upload your work and setup your collection. Add a description, social links and floor price." },
+    { title: "Start Earning", icon: "Icon3", description: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others." },
+]

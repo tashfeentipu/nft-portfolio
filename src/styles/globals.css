@@ -23,8 +23,8 @@
 
 body {
   background-color: var(--background);
-  padding-left: 15%;
-  padding-right: 15%;
+  /* padding-left: 15%;
+  padding-right: 15%; */
 }
 
 @layer utilities {

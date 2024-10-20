@@ -33,10 +33,7 @@ export function DiscoverNFTs({ background, avatar, title, avatarTitle }:
                         <div className='text-text'>0.33 wETH</div>
                     </div>
                 </div>
-            </div>
-            <div>
-
-            </div>
+            </div>            
         </div>
     );
 }
