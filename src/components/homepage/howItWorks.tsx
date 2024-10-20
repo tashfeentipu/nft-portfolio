@@ -3,7 +3,7 @@ import Image from 'next/image'
 export function HowItWorks({title, description, icon }:
     { icon: string, title: string,description: string, }) {
     return (
-        <div className='card w-[330px]' >
+        <div className='card w-[330px] pb-5' >
             <div>
                 <Image
                     src={`/assets/HowItWorks/${icon}.svg`}

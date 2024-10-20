@@ -5,10 +5,15 @@ import { TopCreators } from "@/components/homepage/topCreators";
 import { TrendingCollection } from "@/components/homepage/trendingCollections";
 import { Button } from "@/components/shared/button";
 import { BrowseCategoriesData, DiscoverMoreNFTsData, HowItWorksData, TopCreatorsData } from "./data";
+import Image from "next/image";
+import { InputBoxNewsLetter } from "@/components/shared/inputBoxNewsLetter";
+import { ButtonFilled } from "@/components/shared/buttonFilled";
+import { MainComponent } from "@/components/homepage/mainComponent";
 
 export default function HomePage() {
   return (
     <div>
+      <MainComponent />
       <div className="mx-[15%]">
         <div className="my-5" >
           <div className="text-text text-3xl font-bold my-5" >Trending Collection</div>
@@ -104,6 +109,21 @@ export default function HomePage() {
               title={element.title}
               description={element.description} />
           })}
+        </div>
+      </div>
+      <div className="bg-background-secondary rounded-[20px] flex mx-[15%] justify-between my-5 p-10" >
+        <div>
+          <Image
+            src={"/assets/NewsLetter.png"}
+            alt={"News Letter"}
+            height={310}
+            width={400}
+          />
+        </div>
+        <div className="w-[50%]">
+          <div className="font-bold text-text text-3xl w-full mb-5">Join our weekly digest</div>
+          <div className="text-text mb-5">Get exclusive promotions & updates straight to your inbox</div>
+          <InputBoxNewsLetter />
         </div>
       </div>
     </div>

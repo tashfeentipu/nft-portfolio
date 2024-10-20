@@ -14,7 +14,7 @@ export function DiscoverNFTs({ background, avatar, title, avatarTitle }:
             </div>
             <div className='w-[80%]' >
                 <div className='text-text font-bold w-full my-2' >{title}</div>
-                <div className='flex bg-pink- items-center' >
+                <div className='flex items-center' >
                     <Image
                         src={`/assets/avatars/${avatar}.svg`}
                         alt={`${avatar}`}

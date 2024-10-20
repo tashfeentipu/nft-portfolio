@@ -46,3 +46,7 @@ body {
 .button {
   @apply border-2 border-call-to-action px-10 h-[60px] rounded-xl text-text flex justify-center items-center
 }
+
+.button-filled{
+  @apply bg-call-to-action px-10 text-text h-full w-[40%] flex justify-center items-center
+}
