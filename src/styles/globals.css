@@ -5,7 +5,7 @@
 :root {
   --background: #2B2B2B;
   --background-secondary: #3B3B3B;
-  --caption-label-test: #858584;
+  --caption-label-text: #858584;
   --text: #FFFFFF;
   --call-to-action: #A259FF;
   --blue-accent: #377DF7;
@@ -29,4 +29,20 @@ body {
 
 @layer utilities {
   .text-balance {}
+}
+
+.custom-shadow {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  @apply flex flex-col items-center justify-center bg-background-secondary rounded-[20px] relative;
+}
+
+.card-ranking {
+  @apply absolute top-5 left-5 bg-background w-[30px] h-[30px] flex justify-center items-center text-caption-label-text rounded-full
+}
+
+.button {
+  @apply border-2 border-call-to-action w-[247px] h-[60px] rounded-xl text-text flex justify-center items-center
 }

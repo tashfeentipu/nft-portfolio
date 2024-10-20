@@ -1,4 +1,9 @@
+import { TopCreators } from "@/components/homepage/topCreators";
 import { TrendingCollection } from "@/components/homepage/trendingCollections";
+import { BrowseCategoriesData, TopCreatorsData } from "./data";
+import Image from 'next/image'
+import { Button } from "@/components/shared/button";
+import { BrowseCategory } from "@/components/homepage/browseCategory";
 
 export default function HomePage() {
   return (
@@ -27,9 +32,35 @@ export default function HomePage() {
         </div>
       </div>
       <div>
-        <div className="my-5" >
-          <div className="text-text text-3xl font-bold my-5" >Top Creators</div>
-          <div className="text-text" >Checkout Top Rated Creators on the NFT Marketplace</div>
+        <div className="flex justify-between items-center" >
+          <div className="my-5" >
+            <div className="text-text text-3xl font-bold my-5" >Top Creators</div>
+            <div className="text-text" >Checkout Top Rated Creators on the NFT Marketplace</div>
+          </div>
+          <Button imagePath="/assets/icons/RocketLaunch.svg" title="View Rankings" />
+        </div>
+        <div className="grid grid-cols-4 gap-x-10 gap-y-10">
+          {TopCreatorsData.map((element: any, index: any) => {
+            return <TopCreators
+              index={index + 1}
+              key={index}
+              title={element.title}
+              imagePath={element.avatar}
+            />
+          })}
+        </div>
+      </div>
+      <div>
+        <div className="text-text text-3xl font-bold my-5" >Browse Categories</div>
+        <div className="grid grid-cols-4 gap-x-10 gap-y-10">
+          {BrowseCategoriesData.map((element: any, index: any) => {
+            return <BrowseCategory
+              key={index}
+              icon={element.icon}
+              title={element.title}
+              background={element.background}
+            />
+          })}
         </div>
       </div>
     </div>
