@@ -69,7 +69,7 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div className="mx-[15%]">
+      <div className="mx-[15%] mb-10 ">
         <div className="flex justify-between items-center" >
           <div className="my-5" >
             <div className="text-text text-3xl font-bold my-5">Discover More NFTs</div>
