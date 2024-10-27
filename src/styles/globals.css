@@ -10,21 +10,18 @@
   --call-to-action: #A259FF;
   --blue-accent: #377DF7;
   --red-accent: #FF7262;
+  --green-accent: #00AC4F;
   --gradient1: linear-gradient(135deg, #A259FF, #FF6250);
   --gradient2: linear-gradient(135deg, #A259FF, #377DF7);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --background: #0a0a0a;
-    --foreground: #ededed; */
   }
 }
 
 body {
   background-color: var(--background);
-  /* padding-left: 15%;
-  padding-right: 15%; */
 }
 
 @layer utilities {

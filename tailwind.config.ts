@@ -26,7 +26,8 @@ const config: Config = {
         'call-to-action': 'var(--call-to-action)',
         'background-secondary': 'var(--background-secondary)',
         'caption-label-text': 'var(--caption-label-text)',
-        'background': 'var(--background)'
+        'background': 'var(--background)',
+        'text-green': 'var(--green-accent)'
       }
     },
   },

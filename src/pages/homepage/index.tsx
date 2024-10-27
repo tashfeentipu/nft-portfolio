@@ -1,14 +1,13 @@
 import { BrowseCategory } from "@/components/homepage/browseCategory";
 import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
 import { HowItWorks } from "@/components/homepage/howItWorks";
+import { MainComponent } from "@/components/homepage/mainComponent";
 import { TopCreators } from "@/components/homepage/topCreators";
 import { TrendingCollection } from "@/components/homepage/trendingCollections";
 import { Button } from "@/components/shared/button";
-import { BrowseCategoriesData, DiscoverMoreNFTsData, HowItWorksData, TopCreatorsData } from "./data";
-import Image from "next/image";
 import { InputBoxNewsLetter } from "@/components/shared/inputBoxNewsLetter";
-import { ButtonFilled } from "@/components/shared/buttonFilled";
-import { MainComponent } from "@/components/homepage/mainComponent";
+import Image from "next/image";
+import { BrowseCategoriesData, DiscoverMoreNFTsData, HowItWorksData, TopCreatorsData } from "./data";
 
 export default function HomePage() {
   return (
