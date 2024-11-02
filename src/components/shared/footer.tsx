@@ -3,7 +3,7 @@ import { InputBoxNewsLetter } from './inputBoxNewsLetter';
 
 export function Footer() {
     return (
-        <div className='h-[400px] bg-background-secondary flex justify-center items-center' >
+        <div className='h-[280px] bg-background-secondary flex justify-center items-center' >
             <div className='flex justify-between w-[1050px] h-[250px] items-center border-b border-caption-label-text py-5' >
                 <div className='h-full flex flex-col justify-between' >
                     <div className='flex items-center' >

@@ -12,7 +12,7 @@ export function DiscoverNFTs({ background, avatar, title, avatarTitle }:
                     height={330}
                 />
             </div>
-            <div className='w-[80%]' >
+            <div className='w-[80%] my-3' >
                 <div className='text-text font-bold w-full my-2' >{title}</div>
                 <div className='flex items-center' >
                     <Image
