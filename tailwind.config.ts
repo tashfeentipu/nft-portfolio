@@ -2,9 +2,9 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -23,11 +23,11 @@ const config: Config = {
       },
       colors: {
         text: 'var(--text)',
-        'call-to-action': 'var(--call-to-action)',
-        'background-secondary': 'var(--background-secondary)',
-        'caption-label-text': 'var(--caption-label-text)',
         'background': 'var(--background)',
-        'text-green': 'var(--green-accent)'
+        'text-green': 'var(--green-accent)',
+        'call-to-action': 'var(--call-to-action)',
+        'caption-label-text': 'var(--caption-label-text)',
+        'background-secondary': 'var(--background-secondary)',
       }
     },
   },
