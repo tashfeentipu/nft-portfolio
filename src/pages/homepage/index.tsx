@@ -15,14 +15,14 @@ export default function HomePage() {
   const router = useRouter()
 
   return (
-    <div>
+    <div className="md:mx-[15%] mx-[5%]">
       <MainComponent />
-      <div className="mx-[15%]">
+      <div>
         <div className="my-5" >
-          <div className="text-text text-3xl font-bold my-5" >Trending Collection</div>
+          <div className="text-text md:text-3xl text-2xl font-bold my-5" >Trending Collection</div>
           <div className="text-text" >Checkout our weekly updated trending collection</div>
         </div>
-        <div className="flex justify-between" >
+        <div className="flex justify-between flex-col md:flex-row" >
           <TrendingCollection
             pathPrimary={"primary1"}
             pathSecondary1={"secondary1"}
@@ -40,7 +40,7 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="mx-[15%]">
+      <div>
         <div className="flex justify-between items-center" >
           <div className="my-5" >
             <div className="text-text text-3xl font-bold my-5" >Top Creators</div>
@@ -52,20 +52,20 @@ export default function HomePage() {
             onClick={() => { router.push("/rankings") }}
           />
         </div>
-        <div className="grid grid-cols-4 gap-x-10 gap-y-10">
+        <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-10 md:gap-y-10 gap-y-5">
           {TopCreatorsData.map((element: any, index: any) => {
             return <TopCreators
-              index={index + 1}
               key={index}
+              index={index + 1}
               title={element.title}
               imagePath={element.avatar}
             />
           })}
         </div>
       </div>
-      <div className="mx-[15%]">
+      <div>
         <div className="text-text text-3xl font-bold my-5" >Browse Categories</div>
-        <div className="grid grid-cols-4 gap-x-10 gap-y-10">
+        <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-10 md:gap-y-10 gap-y-5">
           {BrowseCategoriesData.map((element: any, index: any) => {
             return <BrowseCategory
               key={index}
@@ -76,8 +76,8 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div className="mx-[15%] mb-10 ">
-        <div className="flex justify-between items-center" >
+      <div className="mb-10 ">
+        <div className="flex justify-between md:flex-row flex-col items-center" >
           <div className="my-5" >
             <div className="text-text text-3xl font-bold my-5">Discover More NFTs</div>
             <div className="text-text" >Explore new trending NFTs</div>
@@ -88,7 +88,7 @@ export default function HomePage() {
             onClick={() => { router.push("/marketplace") }}
           />
         </div>
-        <div className="flex justify-between" >
+        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-x-10 md:gap-y-10 gap-y-5" >
           {DiscoverMoreNFTsData.map((element: any, index: any) => {
             return <DiscoverNFTs
               key={index}
@@ -104,8 +104,8 @@ export default function HomePage() {
         style={{ backgroundImage: "url('/assets/Highlight.png')" }}>
 
       </div>
-      <div className="mx-[15%]">
-        <div className="flex justify-between items-center" >
+      <div>
+        <div className="flex justify-between md:flex-row flex-col items-center" >
           <div className="my-5" >
             <div className="text-text text-3xl font-bold my-5">How it works</div>
             <div className="text-text" >Find out how to get started</div>
@@ -116,7 +116,7 @@ export default function HomePage() {
             onClick={() => { router.push("/marketplace") }}
           />
         </div>
-        <div className="flex justify-between" >
+        <div className="flex justify-between flex-col md:flex-row" >
           {HowItWorksData.map((element: any, index: any) => {
             return <HowItWorks
               key={index}
@@ -126,7 +126,7 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div className="bg-background-secondary rounded-[20px] flex mx-[15%] justify-between my-5 p-10" >
+      <div className="bg-background-secondary rounded-[20px] flex justify-between flex-col md:flex-row my-5 md:p-10" >
         <div>
           <Image
             src={"/assets/NewsLetter.png"}
@@ -135,7 +135,7 @@ export default function HomePage() {
             width={400}
           />
         </div>
-        <div className="w-[50%]">
+        <div className="md:w-[50%] md:p-0 p-5">
           <div className="font-bold text-text text-3xl w-full mb-5">Join our weekly digest</div>
           <div className="text-text mb-5">Get exclusive promotions & updates straight to your inbox</div>
           <InputBoxNewsLetter />
