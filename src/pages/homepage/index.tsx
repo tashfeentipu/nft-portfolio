@@ -1,15 +1,19 @@
-import { BrowseCategory } from "@/components/homepage/browseCategory";
-import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
-import { HowItWorks } from "@/components/homepage/howItWorks";
-import { MainComponent } from "@/components/homepage/mainComponent";
-import { TopCreators } from "@/components/homepage/topCreators";
-import { TrendingCollection } from "@/components/homepage/trendingCollections";
-import { Button } from "@/components/shared/button";
-import { InputBoxNewsLetter } from "@/components/shared/inputBoxNewsLetter";
-import Image from "next/image";
 import { BrowseCategoriesData, DiscoverMoreNFTsData, HowItWorksData, TopCreatorsData } from "./data";
+import { TrendingCollection } from "@/components/homepage/trendingCollections";
+import { InputBoxNewsLetter } from "@/components/shared/inputBoxNewsLetter";
+import { BrowseCategory } from "@/components/homepage/browseCategory";
+import { MainComponent } from "@/components/homepage/mainComponent";
+import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
+import { TopCreators } from "@/components/homepage/topCreators";
+import { HowItWorks } from "@/components/homepage/howItWorks";
+import { Button } from "@/components/shared/button";
+import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function HomePage() {
+
+  const router = useRouter()
+
   return (
     <div>
       <MainComponent />
@@ -42,7 +46,11 @@ export default function HomePage() {
             <div className="text-text text-3xl font-bold my-5" >Top Creators</div>
             <div className="text-text" >Checkout Top Rated Creators on the NFT Marketplace</div>
           </div>
-          <Button imagePath="/assets/icons/RocketLaunch.svg" title="View Rankings" />
+          <Button
+            imagePath="/assets/icons/RocketLaunch.svg"
+            title="View Rankings"
+            onClick={() => { router.push("/rankings") }}
+          />
         </div>
         <div className="grid grid-cols-4 gap-x-10 gap-y-10">
           {TopCreatorsData.map((element: any, index: any) => {
@@ -74,7 +82,11 @@ export default function HomePage() {
             <div className="text-text text-3xl font-bold my-5">Discover More NFTs</div>
             <div className="text-text" >Explore new trending NFTs</div>
           </div>
-          <Button imagePath="/assets/icons/Eye.svg" title="See All" />
+          <Button
+            imagePath="/assets/icons/Eye.svg"
+            title="See All"
+            onClick={() => { router.push("/marketplace") }}
+          />
         </div>
         <div className="flex justify-between" >
           {DiscoverMoreNFTsData.map((element: any, index: any) => {
@@ -98,7 +110,11 @@ export default function HomePage() {
             <div className="text-text text-3xl font-bold my-5">How it works</div>
             <div className="text-text" >Find out how to get started</div>
           </div>
-          <Button imagePath="/assets/icons/Eye.svg" title="See All" />
+          <Button
+            title="See All"
+            imagePath="/assets/icons/Eye.svg"
+            onClick={() => { router.push("/marketplace") }}
+          />
         </div>
         <div className="flex justify-between" >
           {HowItWorksData.map((element: any, index: any) => {

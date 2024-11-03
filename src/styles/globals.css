@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 :root {
-  --background: #2B2B2B;
-  --background-secondary: #3B3B3B;
-  --caption-label-text: #858584;
   --text: #FFFFFF;
-  --call-to-action: #A259FF;
-  --blue-accent: #377DF7;
   --red-accent: #FF7262;
+  --background: #2B2B2B;
+  --blue-accent: #377DF7;
   --green-accent: #00AC4F;
+  --call-to-action: #A259FF;
+  --caption-label-text: #858584;
+  --background-secondary: #3B3B3B;
   --gradient1: linear-gradient(135deg, #A259FF, #FF6250);
   --gradient2: linear-gradient(135deg, #A259FF, #377DF7);
 }

@@ -4,10 +4,10 @@ import { Header } from './header';
 
 export function Layout({ children }: any) {
     return (
-        <div>
+        <>
             <Header />
             {children}
             <Footer />
-        </div>
+        </>
     );
 }

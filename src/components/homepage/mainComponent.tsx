@@ -1,6 +1,10 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 export function MainComponent() {
+
+    const router = useRouter()
+
     return (
         <div className="mx-[15%] flex justify-between my-10" >
             <div className="w-[50%] flex flex-col justify-between">
@@ -8,7 +12,10 @@ export function MainComponent() {
 
                     <div className="font-bold text-text text-5xl w-full mb-5">Discover digital art & Collect NFTs</div>
                     <div className="text-text mb-5">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</div>
-                    <button className="bg-call-to-action px-10 text-text h-[60px] rounded-xl flex justify-center items-center">
+                    <button
+                    onClick={() => {router.push('/account')}}
+                        className="bg-call-to-action px-10 text-text h-[60px] rounded-xl flex justify-center items-center"
+                    >
                         Get Started
                     </button>
                 </div>
