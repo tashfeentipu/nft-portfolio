@@ -1,17 +1,16 @@
 import { InputBox } from "@/components/shared/inputBox";
-import Image from "next/image";
 
 export default function CreateAccount() {
   return (
-    <div className="flex" >
+    <div className="flex md:flex-row flex-col" >
       <img src={"/assets/createAccount/main.png"} alt={"Create Account"} className="w-full h-auto"/>
-      <div className="flex justify-center items-start w-full" >
+      <div className="flex justify-center items-center w-full my-5" >
         <div className="flex flex-col justify-center" >
-          <div className="flex flex-col h-[100px] w-[460px] justify-between mb-[40px]">
+          <div className="flex flex-col h-auto md:w-[460px] justify-between md:items-start items-center md:mb-[40px] mb-[10px]">
             <h1 className="text-text font-bold text-3xl" >Create Acocunt</h1>
-            <p className="text-text" >Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+            <p className="text-text text-center md:text-start" >Welcome! enter your details and start creating, collecting and selling NFTs.</p>
           </div>
-          <div className="flex flex-col h-[290px] justify-between" >
+          <div className="flex flex-col h-[290px] justify-between items-center md:items-start" >
             <InputBox placeholder={"Username"} />
             <InputBox placeholder={"Email Address"} />
             <InputBox placeholder={"Password"} />

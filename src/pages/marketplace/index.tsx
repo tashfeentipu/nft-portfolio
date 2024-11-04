@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function MarketPlace() {
   return (
-    <div className="mx-[15%]" >
+    <div className="md:mx-[15%] mx-[5%]" >
       <div className="my-5" >
         <div className="text-text text-3xl font-bold my-5" >Browse Marketplace</div>
         <div className="text-text mb-5" >Browse through more than 50k NFTs on the NFT Marketplace.</div>
@@ -15,7 +15,7 @@ export default function MarketPlace() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-10 my-5" >
+      <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-5 my-5" >
         {DiscoverMoreNFTsData.map((element: any, index: any) => {
           return <DiscoverNFTs
             key={index}

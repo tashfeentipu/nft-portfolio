@@ -6,8 +6,8 @@ export function DiscoverNFTs({ background, avatar, title, avatarTitle }:
         <div className='card' >
             <img
                 src={`/assets/discoverMoreNFTs/${background}.png`}
-                alt={`${background}`}
                 className='md:w-[330px] h-auto w-full'
+                alt={`${background}`}
             />
             <div className='w-[80%] my-3' >
                 <div className='text-text font-bold w-full my-2' >{title}</div>
