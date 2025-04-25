@@ -1,7 +1,7 @@
-import Image from 'next/image'
-
 export function BrowseCategory({ title, background, icon }:
     { title: string, background: string, icon: string }) {
+        console.log(icon);
+        
     return (
         <div className='card'>
             <img

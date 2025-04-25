@@ -69,7 +69,7 @@ export default function Artist() {
           ))}
         </div>
         <div className="grid grid-cols-3 gap-10 my-5" >
-          {DiscoverMoreNFTsData.map((element: any, index: any) => {
+          {DiscoverMoreNFTsData.map((element: any, index: number) => {
             return <DiscoverNFTs
               key={index}
               title={element.title}

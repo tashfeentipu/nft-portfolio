@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 export function HowItWorks({ title, description, icon }:
     { icon: string, title: string, description: string, }) {

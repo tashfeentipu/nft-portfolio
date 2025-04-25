@@ -1,5 +1,3 @@
-import { Button } from './button';
-import Image from "next/image";
 import { ButtonFilled } from './buttonFilled';
 export function InputBoxNewsLetter() {
     return (
