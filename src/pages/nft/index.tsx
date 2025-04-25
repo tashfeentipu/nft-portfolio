@@ -1,5 +1,5 @@
 import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
-import { MoreNFTsData } from "./data";
+import { MoreNFTsData } from "../../constants/nft_data";
 import { Button } from "@/components/shared/button";
 
 export default function NFT() {

@@ -1,7 +1,7 @@
 import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
 import { useState } from "react";
 import Image from 'next/image'
-import { DiscoverMoreNFTsData } from "./data";
+import { DiscoverMoreNFTsData } from "../../constants/artist_data";
 
 export default function Artist() {
   const [activeTab, setActiveTab] = useState("Created")

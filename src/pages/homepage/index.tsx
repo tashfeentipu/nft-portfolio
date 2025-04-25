@@ -1,4 +1,4 @@
-import { BrowseCategoriesData, DiscoverMoreNFTsData, HowItWorksData, TopCreatorsData } from "./data";
+import { BrowseCategoriesData, DiscoverMoreNFTsData, HowItWorksData, TopCreatorsData } from "../../constants/homepage_data";
 import { TrendingCollection } from "@/components/homepage/trendingCollections";
 import { InputBoxNewsLetter } from "@/components/shared/inputBoxNewsLetter";
 import { BrowseCategory } from "@/components/homepage/browseCategory";

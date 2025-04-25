@@ -1,5 +1,5 @@
 import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
-import { DiscoverMoreNFTsData } from "../artist/data";
+import { DiscoverMoreNFTsData } from "../../constants/artist_data";
 import Image from 'next/image';
 
 export default function MarketPlace() {

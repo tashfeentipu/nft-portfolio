@@ -1,6 +1,6 @@
 import { TableItem } from "@/components/rankings/tableItems";
 import { TabView } from "@/components/shared/tabView";
-import { RankingsData } from "./data";
+import { RankingsData } from "../../constants/rankings_data";
 
 export default function HomePage() {
   return (
