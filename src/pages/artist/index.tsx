@@ -1,6 +1,5 @@
 import { DiscoverNFTs } from "@/components/homepage/discoverNFTs";
 import { useState } from "react";
-import Image from 'next/image'
 import { DiscoverMoreNFTsData } from "../../constants/artist_data";
 
 export default function Artist() {
@@ -32,19 +31,19 @@ export default function Artist() {
             <div className="text-text">The internet's friendliest designer kid.</div>
             <div className="text-caption-label-text">Links</div>
             <div className='flex w-[150px] justify-between' >
-              <Image src={'./assets/icons/DiscordLogo.svg'} alt={'Discord Logo'} width={32} height={32} />
-              <Image src={'./assets/icons/InstagramLogo.svg'} alt={'Instagram Logo'} width={32} height={32} />
-              <Image src={'./assets/icons/TwitterLogo.svg'} alt={'Twitter Logo'} width={32} height={32} />
-              <Image src={'./assets/icons/YoutubeLogo.svg'} alt={'Youtube Logo'} width={32} height={32} />
+              <img src={'./assets/icons/DiscordLogo.svg'} alt={'Discord Logo'} width={32} height={32} />
+              <img src={'./assets/icons/InstagramLogo.svg'} alt={'Instagram Logo'} width={32} height={32} />
+              <img src={'./assets/icons/TwitterLogo.svg'} alt={'Twitter Logo'} width={32} height={32} />
+              <img src={'./assets/icons/YoutubeLogo.svg'} alt={'Youtube Logo'} width={32} height={32} />
             </div>
           </div>
           <div className="flex" >
             <button className="h-[60px] w-[186px] text-text bg-call-to-action rounded-xl flex justify-center items-center mr-5">
-              <Image src={"./assets/icons/Eye.svg"} alt="Wallet Button" width={20} height={20} />
+              <img src={"./assets/icons/Eye.svg"} alt="Wallet Button" width={20} height={20} />
               0xc0E3...B79C
             </button>
             <button className="h-[60px] w-[186px] text-text border-2 border-call-to-action rounded-xl flex justify-center items-center" >
-              <Image src={"./assets/icons/Eye.svg"} alt="Wallet Button" width={20} height={20} />
+              <img src={"./assets/icons/Eye.svg"} alt="Wallet Button" width={20} height={20} />
               <span className="ml-4">Follow</span>
             </button>
           </div>

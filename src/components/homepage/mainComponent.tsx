@@ -43,7 +43,7 @@ export function MainComponent() {
                 <div className="w-full p-3" >
                     <div className="text-text mb-3 text-xl font-bold" >Space Walking</div>
                     <div className='flex items-center' >
-                        <Image
+                        <img
                             src={`/assets/avatars/avatar1.svg`}
                             alt={`avatar`}
                             width={30}

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -7,7 +6,7 @@ export function Header() {
     return (
         <div className='h-[80px] flex justify-between items-center mx-10' >
             <Link href={'/homepage'} className='flex items-center'>
-                <Image src={'./assets/icons/logo.svg'} alt={'Logo'} width={32} height={32} />
+                <img src={'./assets/icons/logo.svg'} alt={'Logo'} width={32} height={32} />
                 <p className='ml-3 font-bold text-text'>NFT Marketplace</p>
             </Link>
             <div className='flex w-[40%] justify-between items-center' >
@@ -23,7 +22,7 @@ export function Header() {
                     className="bg-call-to-action text-text flex justify-center w-[152px] h-[50px] items-center rounded-xl"
                     onClick={() => { router.push('/account') }}
                 >
-                    <Image src={'./assets/icons/User.svg'} alt="Sign Up" width={20} height={20} className="mr-2" />
+                    <img src={'./assets/icons/User.svg'} alt="Sign Up" width={20} height={20} className="mr-2" />
                     Sign Up
                 </button>
             </div>
