@@ -1,12 +1,10 @@
 export function BrowseCategory({ title, background, icon }:
     { title: string, background: string, icon: string }) {
-        console.log(icon);
-        
     return (
         <div className='card'>
             <img
-                src={`/assets/browseCategories/${background}.png`}
                 alt={background}
+                src={`/assets/browseCategories/${background}.png`}
                 className='custom-shadow object-cover h-auto md:w-[240px] w-full'
             />
             <div className='h-[60px] flex justify-center items-center text-text font-bold size-10 w-[100%]'>{title}</div>

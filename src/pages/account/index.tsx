@@ -3,8 +3,8 @@ import { InputBox } from "@/components/shared/inputBox";
 export default function CreateAccount() {
   return (
     <div className="flex md:flex-row flex-col" >
-      <img src={"/assets/createAccount/main.png"} alt={"Create Account"} className="w-full h-auto"/>
-      <div className="flex justify-center items-center w-full my-5" >
+      <img src={"/assets/createAccount/main.png"} alt={"Create Account"} />
+      <div className="flex justify-center items-start w-full my-5" >
         <div className="flex flex-col justify-center" >
           <div className="flex flex-col h-auto md:w-[460px] justify-between md:items-start items-center md:mb-[40px] mb-[10px]">
             <h1 className="text-text font-bold text-3xl" >Create Acocunt</h1>

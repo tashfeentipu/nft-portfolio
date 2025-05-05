@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 export function TopCreators({ title, imagePath, index }:
-    { title: string, imagePath: string, index: string }) {
+    { title: string, imagePath: string, index: number }) {
     return (
         <div className='flex md:flex-col flex-row items-center md:justify-center justify-around
                         bg-background-secondary relative rounded-[20px] md:h-[240px] md:w-[238px]'>

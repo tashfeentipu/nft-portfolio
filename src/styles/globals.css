@@ -48,3 +48,7 @@ body {
 .button-filled{
   @apply bg-call-to-action px-10 text-text h-full w-[40%] flex justify-center items-center
 }
+
+.button-call-to-action{
+  @apply bg-call-to-action px-10 text-text h-[60px] rounded-xl flex justify-center items-center w-full md:w-auto mb-5 md:mb-0
+}

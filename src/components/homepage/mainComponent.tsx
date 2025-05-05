@@ -12,8 +12,8 @@ export function MainComponent() {
                     <div className="font-bold text-text md:text-5xl text-3xl w-full mb-5">Discover digital art & Collect NFTs</div>
                     <div className="text-text mb-5">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</div>
                     <button
-                    onClick={() => {router.push('/account')}}
-                        className="bg-call-to-action px-10 text-text h-[60px] rounded-xl flex justify-center items-center w-full md:w-auto mb-5 md:mb-0"
+                        onClick={() => { router.push('/account') }}
+                        className="button-call-to-action"
                     >
                         Get Started
                     </button>

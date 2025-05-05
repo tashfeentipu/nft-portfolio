@@ -41,8 +41,8 @@ export default function HomePage() {
         </div>
       </div>
       <div>
-        <div className="flex justify-between items-center" >
-          <div className="my-5" >
+        <div className="gap-5 my-5 flex flex-col md:flex-row justify-between items-center" >
+          <div>
             <div className="text-text text-3xl font-bold my-5" >Top Creators</div>
             <div className="text-text" >Checkout Top Rated Creators on the NFT Marketplace</div>
           </div>
@@ -53,7 +53,7 @@ export default function HomePage() {
           />
         </div>
         <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-10 md:gap-y-10 gap-y-5">
-          {TopCreatorsData.map((element: any, index: any) => {
+          {TopCreatorsData.map((element: any, index: number) => {
             return <TopCreators
               key={index}
               index={index + 1}
@@ -66,7 +66,7 @@ export default function HomePage() {
       <div>
         <div className="text-text text-3xl font-bold my-5" >Browse Categories</div>
         <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-10 md:gap-y-10 gap-y-5">
-          {BrowseCategoriesData.map((element: any, index: any) => {
+          {BrowseCategoriesData.map((element: any, index: number) => {
             return <BrowseCategory
               key={index}
               icon={element.icon}
