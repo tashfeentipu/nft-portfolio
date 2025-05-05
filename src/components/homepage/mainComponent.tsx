@@ -6,7 +6,7 @@ export function MainComponent() {
     const router = useRouter()
 
     return (
-        <div className="flex flex-col justify-between md:flex-row my-10" >
+        <div className="flex flex-col justify-between md:flex-row my-10 md:mx-[15%] mx-[5%]" >
             <div className="md:w-[50%] flex flex-col justify-between">
                 <div>
                     <div className="font-bold text-text md:text-5xl text-3xl w-full mb-5">Discover digital art & Collect NFTs</div>

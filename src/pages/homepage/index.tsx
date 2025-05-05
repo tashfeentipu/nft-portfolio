@@ -15,9 +15,9 @@ export default function HomePage() {
   const router = useRouter()
 
   return (
-    <div className="md:mx-[15%] mx-[5%]">
+    <div>
       <MainComponent />
-      <div>
+      <div className="md:mx-[15%] mx-[5%]" >
         <div className="my-5" >
           <div className="text-text md:text-3xl text-2xl font-bold my-5" >Trending Collection</div>
           <div className="text-text" >Checkout our weekly updated trending collection</div>
@@ -40,15 +40,15 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div>
+      <div className="md:mx-[15%] mx-[5%]">
         <div className="gap-5 my-5 flex flex-col md:flex-row justify-between items-center" >
           <div>
             <div className="text-text text-3xl font-bold my-5" >Top Creators</div>
             <div className="text-text" >Checkout Top Rated Creators on the NFT Marketplace</div>
           </div>
           <Button
-            imagePath="/assets/icons/RocketLaunch.svg"
             title="View Rankings"
+            imagePath="/assets/icons/RocketLaunch.svg"
             onClick={() => { router.push("/rankings") }}
           />
         </div>
@@ -63,8 +63,8 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div>
-        <div className="text-text text-3xl font-bold my-5" >Browse Categories</div>
+      <div className="md:mx-[15%] mx-[5%]" >
+        <div className="text-text text-3xl font-bold my-5">Browse Categories</div>
         <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-10 md:gap-y-10 gap-y-5">
           {BrowseCategoriesData.map((element: any, index: number) => {
             return <BrowseCategory
@@ -76,7 +76,7 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div className="mb-10 ">
+      <div className="mb-10 md:mx-[15%] mx-[5%]">
         <div className="flex justify-between md:flex-row flex-col items-center" >
           <div className="my-5" >
             <div className="text-text text-3xl font-bold my-5">Discover More NFTs</div>
@@ -100,11 +100,29 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div className="relative w-full h-screen bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('/assets/Highlight.png')" }}>
+      <div
+        className="relative w-full h-screen bg-cover bg-fixed bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/Highlight.png')" }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
 
+        {/* Linear Gradient Overlay (Purple) */}
+        <div
+          className="absolute inset-0 z-20"
+          style={{
+            background: 'linear-gradient(0deg, #A259FF 0%, #A259FF 100%)',
+            opacity: 0.5, // Optional: tweak this!
+            mixBlendMode: 'overlay', // Optional: adds that glassy magic
+          }}
+        ></div>
+
+        {/* Foreground Content */}
+        <div className="relative z-30 flex items-center justify-center h-full">
+          <h1 className="text-white text-4xl font-bold">Welcome to the NFT Marketplace</h1>
+        </div>
       </div>
-      <div>
+      <div className="md:mx-[15%] mx-[5%]">
         <div className="flex justify-between md:flex-row flex-col items-center" >
           <div className="my-5" >
             <div className="text-text text-3xl font-bold my-5">How it works</div>
@@ -126,7 +144,8 @@ export default function HomePage() {
           })}
         </div>
       </div>
-      <div className="bg-background-secondary rounded-[20px] flex justify-between flex-col md:flex-row my-5 md:p-10" >
+      <div className={`bg-background-secondary md:mx-[15%] mx-[5%] rounded-[20px] 
+        flex justify-between flex-col md:flex-row my-5 md:p-10`} >
         <div>
           <Image
             src={"/assets/NewsLetter.png"}
