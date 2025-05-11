@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/assets/icons/Logo.svg" />
+        <link rel="icon" href="/assets/icons/logo.svg" />
         <title>NFT Marketplace</title>
       </Head>
       <body>
